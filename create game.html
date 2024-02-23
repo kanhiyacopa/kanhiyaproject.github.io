@@ -1,0 +1,44 @@
+<html>
+<head>
+ <i><title>TIC TAC TOE</title></i>
+  <meta name="description" content="Multiplayer Tic Tac Toe Game">
+  <link rel="stylesheet" href="tic tac toe.css">
+</head>
+
+<body class="center">
+  <h1>TIC TAC Toe</h2>
+    <div class="center" id="main">
+      <h4>--ENJOY YOU GAME--</h4><br>
+      <button onclick=" CREATOR()" class="button">create by 
+    "kanhiya nalawde"</button><br><br>
+      <button onclick="start()" class="button">Start a New Game</button>
+      <br><br>
+      <button onclick="learn()" class="button">Learn How to Play GAME?</button>
+      <br><br>
+      
+      <button onclick="exit()" class="button">Exit</button>
+    </div>
+    <div class="center" id="learn">
+      <p>
+          You are X, your friend is O. 
+          <br>
+          The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+          When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.....
+      </p>
+      <img src="./image/learn.jpg" alt="Learn">
+      <br>
+      <button onclick="main()" class="button">Back</button>
+    </div>
+    <div class="center" id="game">
+      <div class="center" style="margin: 5px;">
+        <h3 id="textPlayer" style="font-size: 0.9rem;">(Current 
+          
+            1)</h2>
+          <h3 id="textComd" style="font-size: 0.9rem;">Player 2 can play now...</h2>
+      </div>
+      <canvas id="tic-tac-toe-board" class="center"></canvas>
+    </div>
+
+    <script src="js tic.js"></script>
+</body> 
+</html>
